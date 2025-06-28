@@ -1,9 +1,9 @@
-### think5-captcha
+### tp5-captcha
 基于 https://github.com/top-think/think-captcha/tree/v2.0.2
 
 ### 安装
 ~~~
-composer require ibibicloud/think5-captcha
+composer require ibibicloud/tp5-captcha
 ~~~
 
 ### 路由规则
@@ -18,7 +18,7 @@ Route::get('/captcha', function(){
 <div>{:captcha_img()}</div>
 ~~~
 ~~~
-<div><img src="{:captcha_src()}" alt="captcha" /></div>
+<div><img src="{:captcha_src()}"></div>
 ~~~
 
 ### 手动验证

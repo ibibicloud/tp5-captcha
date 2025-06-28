@@ -18,7 +18,7 @@ function captcha($id = '', $config = [])
 function captcha_img($id = '')
 {
     $src = captcha_src($id);
-    return '<img title="点击刷新验证码" src="' . $src . '"' . " onclick='this.src=\"{$src}?\"+Math.random();' />";
+    return '<img src="' . $src . '"' . " onclick='this.src=\"{$src}?\"+Math.random();' title=\"点击刷新验证码\"  id=\"captcha_src\">";
 }
 
 /**
