@@ -12,6 +12,9 @@ Route::get('/captcha', function(){
     return captcha('', config('captcha'));
 });
 ~~~
+~~~
+Route::get('/captcha','\\think\\captcha\\CaptchaController@index');
+~~~
 
 ### 模板输出
 ~~~
